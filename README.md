@@ -1,4 +1,4 @@
-# A simple MERN stack application 
+# A simple MERN(MONGODB, EXPRESSJS, REACTJS & NODEJS) stack application 
 
 ### Create a network for the docker containers
 
@@ -8,12 +8,12 @@
 
 ```sh
 cd mern/frontend
-docker build -t mern-frontend .
+docker build -t frontend .
 ```
 
 ### Run the client
 
-`docker run --name=frontend --network=demo -d -p 5173:5173 mern-frontend`
+`docker run --name=frontend --network=demo -d -p 5173:5173 frontend`
 
 ### Verify the client is running
 
@@ -27,14 +27,15 @@ Open your browser and type `http://localhost:5173`
 
 ```sh
 cd mern/backend
-docker build -t mern-backend .
+docker build -t backend .
 ```
 
 ### Run the server
 
-`docker run --name=backend --network=demo -d -p 5050:5050 mern-backend`
+`docker run --name=backend --network=demo -d -p 5050:5050 backend`
 
 ## Using Docker Compose
 
 `docker compose up -d`
+"C:\Users\Azeez2\Pictures\Screenshots\mern.png"
 

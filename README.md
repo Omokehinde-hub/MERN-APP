@@ -37,5 +37,5 @@ docker build -t backend .
 ## Using Docker Compose
 
 `docker compose up -d`
-
+- ![Image](https://github.com/user-attachments/assets/14bf7d82-0203-4453-8eea-e48c4ff15035)
 

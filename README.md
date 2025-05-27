@@ -38,5 +38,4 @@ docker build -t backend .
 
 `docker compose up -d`
 
-- ![Screenshot 2023-02-01 at 5 46 14 PM]("C:\Users\Azeez2\Pictures\Screenshots\mern.png")https://github.com/Omokehinde-hub/MERN-APP/issues/1#issue-3094405376
-- 
+

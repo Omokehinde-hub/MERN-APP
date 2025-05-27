@@ -37,6 +37,9 @@ docker build -t backend .
 ## Using Docker Compose
 
 `docker compose up -d`
-- Then confirm if its working at 'http://localhost:5173' 
+- Then confirm if its working at 'http://localhost:5173'
+  
 - ![Image](https://github.com/user-attachments/assets/14bf7d82-0203-4453-8eea-e48c4ff15035)
+
+To shut it down use " docker compose down "
 

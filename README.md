@@ -37,5 +37,6 @@ docker build -t backend .
 ## Using Docker Compose
 
 `docker compose up -d`
-"C:\Users\Azeez2\Pictures\Screenshots\mern.png"
+
+- ![Screenshot 2023-02-01 at 5 46 14 PM]("C:\Users\Azeez2\Pictures\Screenshots\mern.png")
 

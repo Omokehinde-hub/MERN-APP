@@ -1,5 +1,10 @@
 # A simple MERN stack application 
 
+
+![CI](https://github.com/Omokehinde-hub/MERN-App/actions/workflows/github-action.yml/badge.svg)
+
+
+
 ### Create a network for the docker containers
 
 `docker network create demo`

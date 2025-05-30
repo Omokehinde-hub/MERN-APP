@@ -1,5 +1,7 @@
 # A simple MERN(MONGODB, EXPRESSJS, REACTJS & NODEJS) stack application 
 
+## Switch to the master branch to see the automation of this App using github actions.
+
 ### Create a network for the docker containers
 
 `docker network create demo`

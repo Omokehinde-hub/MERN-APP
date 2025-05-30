@@ -1,0 +1,43 @@
+name: Deploy and Remove Docker App
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy_and_test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Docker
+      uses: docker/setup-buildx-action@v2
+
+    - name: Start containers
+      run: |
+        docker-compose up -d
+        sleep 10  # give the app time to boot
+
+    - name: Test App is Running on Port 5173
+      id: app_test
+      run: |
+        if curl --fail http://localhost:5173; then
+          echo "✅ App is running on port 5173!"
+          echo "result=success" >> $GITHUB_OUTPUT
+        else
+          echo "❌ App failed to start on port 5173."
+          echo "result=failure" >> $GITHUB_OUTPUT
+          exit 1
+        fi
+
+    - name: Show test result
+      run: |
+        echo "🧪 Test Result: ${{ steps.app_test.outputs.result }}"
+
+    - name: Tear Down Containers
+      if: always()
+      run: docker-compose down
+
